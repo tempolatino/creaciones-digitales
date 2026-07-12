@@ -245,6 +245,100 @@ h1,h2,h3{font-family:var(--font-display); font-weight:600; letter-spacing:-0.01e
 /* ============ SECTIONS ============ */
 .section{padding:88px 0;}
 
+/* ============ MANIFESTO ============ */
+.manifesto-grid{
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  gap:56px;
+  align-items:center;
+  margin-bottom:56px;
+}
+.manifesto-copy p{
+  font-size:16.5px;
+  color:var(--text-dim);
+  margin-bottom:18px;
+  max-width:520px;
+}
+.manifesto-copy strong{color:var(--text); font-weight:600;}
+.manifesto-quote{
+  font-family:var(--font-display);
+  font-size:19px;
+  font-weight:600;
+  margin-top:26px;
+  max-width:480px;
+}
+.manifesto-flow{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding:32px 28px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+}
+.flow-step{
+  display:flex;
+  align-items:baseline;
+  gap:14px;
+  padding:14px 16px;
+  border-radius:10px;
+  background:var(--panel-2);
+}
+.flow-step--highlight{
+  background:linear-gradient(90deg, rgba(77,217,232,0.10), rgba(155,111,232,0.10));
+  border:1px solid rgba(77,217,232,0.25);
+}
+.flow-num{
+  font-family:var(--font-mono);
+  font-size:12px;
+  color:var(--cyan);
+}
+.flow-label{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:15.5px;
+}
+.flow-arrow{
+  text-align:center;
+  color:var(--text-faint);
+  font-size:14px;
+}
+@media (max-width:880px){
+  .manifesto-grid{grid-template-columns:1fr; gap:32px;}
+  .manifesto-copy p, .manifesto-quote{max-width:none;}
+}
+
+.mv-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  margin-bottom:32px;
+}
+.mv-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:28px 26px;
+}
+.mv-card .tag{margin-bottom:16px;}
+.mv-card p{font-size:15px; color:var(--text-dim);}
+@media (max-width:700px){
+  .mv-grid{grid-template-columns:1fr;}
+}
+
+.expert-strip{
+  border-top:1px solid var(--line);
+  padding-top:28px;
+  text-align:center;
+}
+.expert-strip p{
+  font-size:16px;
+  color:var(--text-dim);
+  max-width:600px;
+  margin:0 auto;
+}
+.expert-strip strong{color:var(--text); font-weight:600;}
+
 /* ============ SERVICES ============ */
 .services-grid{
   display:grid;
